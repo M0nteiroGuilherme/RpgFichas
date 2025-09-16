@@ -1,3 +1,3 @@
-Fazer um fichario de RPG em C#, obejetivo e facilitar a criação de fichas para playes e mestre, aonde possa se criar, personagems, NPCs e tambem monstros.
-Ele tambem terá, rolagem de dados e iniciativas aonde será possivel ver a sequencia de ações.
-16/09/2025
+----| O que é o fichario? |----
+Fazer um fichário de RPG em C#, objetivo e facilitar a criação de fichas para player e mestre, aonde possa se criar, personagens, NPCs e também monstros. Ele possuirá, rolagem de dados e iniciativas aonde será possível ver a sequência de ações.
+
