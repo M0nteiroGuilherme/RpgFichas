@@ -1,0 +1,14 @@
+C:\Users\Guilherme\source\repos\Rpg\Rpg\bin\Debug\net8.0\Rpg.exe
+C:\Users\Guilherme\source\repos\Rpg\Rpg\bin\Debug\net8.0\Rpg.deps.json
+C:\Users\Guilherme\source\repos\Rpg\Rpg\bin\Debug\net8.0\Rpg.runtimeconfig.json
+C:\Users\Guilherme\source\repos\Rpg\Rpg\bin\Debug\net8.0\Rpg.dll
+C:\Users\Guilherme\source\repos\Rpg\Rpg\bin\Debug\net8.0\Rpg.pdb
+C:\Users\Guilherme\source\repos\Rpg\Rpg\obj\Debug\net8.0\Rpg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guilherme\source\repos\Rpg\Rpg\obj\Debug\net8.0\Rpg.AssemblyInfoInputs.cache
+C:\Users\Guilherme\source\repos\Rpg\Rpg\obj\Debug\net8.0\Rpg.AssemblyInfo.cs
+C:\Users\Guilherme\source\repos\Rpg\Rpg\obj\Debug\net8.0\Rpg.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme\source\repos\Rpg\Rpg\obj\Debug\net8.0\Rpg.dll
+C:\Users\Guilherme\source\repos\Rpg\Rpg\obj\Debug\net8.0\refint\Rpg.dll
+C:\Users\Guilherme\source\repos\Rpg\Rpg\obj\Debug\net8.0\Rpg.pdb
+C:\Users\Guilherme\source\repos\Rpg\Rpg\obj\Debug\net8.0\Rpg.genruntimeconfig.cache
+C:\Users\Guilherme\source\repos\Rpg\Rpg\obj\Debug\net8.0\ref\Rpg.dll
