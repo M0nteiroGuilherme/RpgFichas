@@ -1,21 +1,20 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Rpg.OrdemParanormal;
-using static Rpg.OrdemParanormal.FichaOrdem;
+using static Rpg.OrdemParanormal.FichaCompletaOrdem;
 
 
 namespace Rpg.OrdemParanormal
 {
     internal class OrigemOrdem
-    {   
-        private AtributoOrdem atributo = new AtributoOrdem();
-        private FichaOrdem ficha = new FichaOrdem();
+    {      
 
         public Dictionary<string, string> Origem { get; private set; }
-        public OrigemOrdem() {
+        public OrigemOrdem()
+        {
             Origem = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
             {
                 {"Agente de Saúde",""},
@@ -63,13 +62,15 @@ namespace Rpg.OrdemParanormal
                 Console.WriteLine($"{origem.Key} | {origem.Value}");
             }
         }
-
-        public void SelecioneOrigem()
+            
+        public void SelecioneOrigem(FichaCompletaOrdem ficha)
         {
+            FichaCompletaOrdem fichaCompletaOrdem = new FichaCompletaOrdem();
             Console.WriteLine("escolha sua origem:");
             string OrigemSelecionada = Console.ReadLine();
 
             if (OrigemSelecionada == "Acadêmico") {
+
                 ficha.Pericias["Intuição "] = 5;
                 ficha.Pericias["Medicina"] = 5;
                 ficha.Habilidades.Add("Foco de Atirador", new Habilidade { Descricao = "Quando faz um teste usando Intelecto, você pode gastar 2 PE para receber +5 nesse teste.", PontosDeEsforco = 2 });
@@ -244,7 +245,7 @@ namespace Rpg.OrdemParanormal
                 ficha.Habilidades.Add("", new Habilidade { Descricao = "", PontosDeEsforco = 3 });
             } else {
                 Console.WriteLine("Aparentemente voce colocou uma origem n existente");
-                SelecioneOrigem(); 
+                SelecioneOrigem(ficha); 
             }
 }
 }
