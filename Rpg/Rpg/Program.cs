@@ -1,6 +1,13 @@
-﻿using System;
+using System;
+using System.IO;
 using Rpg;
 using Rpg.OrdemParanormal;
+
+FichaCompletaOrdem minhaFicha = new FichaCompletaOrdem();
+ToqueFinalOrdem toqueFinal = new ToqueFinalOrdem();
+AtributoOrdem atributo = new AtributoOrdem();
+OrigemOrdem origem = new OrigemOrdem();
+ClasseOrdem classe = new ClasseOrdem();
 
 // Loop para manter o menu ativo.
 bool continuar = true;
@@ -31,23 +38,22 @@ bool continuar = true;
                         {
                             Console.WriteLine("Funcionalidade: Criar personagem D&D");
                             // Adicione aqui a lógica para D&D.
+
                         }
                         else if (opcaoSistema == 2)
-                        {   
-                            OrigemOrdem origem = new OrigemOrdem();
-                            AtributoOrdem atributo = new AtributoOrdem();
-                            ToqueFinalOrdem caracteristicas = new ToqueFinalOrdem();
+                        {
+                        toqueFinal.AltaracaoCaracteristicas(minhaFicha);
 
-                            origem.ExibirOrigem();
-                            /*
-                            atributo.CriandoAtributo();                        
-                            
-                            caracteristicas.AltaracaoCaracteristicas();
+                        atributo.CriandoAtributo(minhaFicha);
 
-                            caracteristicas.Caracteristicas();
-                            */
+                        origem.SelecioneOrigem(minhaFicha);
 
-                        }
+                        classe.SelecaoClasse(minhaFicha);
+
+                        toqueFinal.Caracteristicas(minhaFicha);
+
+                        minhaFicha.ExibirAtributo();
+                    }
                         else
                         {
                             Console.WriteLine("Opção de sistema inválida.");
